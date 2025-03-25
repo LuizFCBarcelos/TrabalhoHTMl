@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Ring</title>
+    <link href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" rel="stylesheet">
+</head>
+<body> 
+<style>
+    body{
+        background-image: url('https://i.pinimg.com/736x/17/1a/5a/171a5aedcfc102804eec5fcd1c2d05b9.jpg'); /* Substitua pelo link da sua imagem */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+    }
+    #titulo{
+        text-align: center;
+        margin-bottom: 20px;
+        color: gold;
+        background-color:midnightblue ;
+        font-family: "New Rocker", system-ui;
+        height: 40px;
+        
+        
+    }
+    #conteiner1, #conteiner2{
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        margin-bottom: 20px;
+    }
+   
+    
+    .logo {
+    width: 100px;
+    height: 120px;
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
+    }
+
+    .logo:hover {
+        transform: scale(1.3);
+    }
+    .logo:active {
+        transform: scale(1.1) ;
+    }
+
+    .mago{
+        text-align: center;
+        color: black;
+        background-color: aqua;
+        padding: 20px;
+        border-radius: 30px;
+        width: 200px;
+        height: 200px;
+        font-family: "New Rocker", system-ui;
+    }
+    .guerreiro{
+        text-align: center;
+        color: black;
+        background-color: brown;
+        padding: 20px;
+        border-radius: 30px;
+        width: 200px;
+        height: 200px;
+        font-family: "New Rocker", system-ui;
+    }
+    .assassino{
+        text-align: center;
+        color: black;
+        background-color: red;
+        padding: 20px;
+        border-radius: 30px;
+        width: 200px;
+        height: 200px;
+        font-family: "New Rocker", system-ui;
+    }
+    .piromante{
+        text-align: center;
+        color: black;
+        background-color: yellow;
+        padding: 20px;
+        border-radius: 30px;
+        width: 200px;
+        height: 200px;
+        font-family: "New Rocker", system-ui;
+    }
+
+    
+
+</style>
+    <div id =  "titulo">
+        <h1>Dark Ring</h1>
+    </div>  
+
+    <div id = "conteiner1">
+        <div class = "mago" onclick="BaseMago()">
+            <img src="https://i.pinimg.com/736x/f9/bc/ca/f9bccaa1d0b79e6ea6c56bf3d0442da8.jpg" class="logo">
+            <h1>MAGO</h1>
+            
+        </div>
+        <div class = "guerreiro" onclick="BaseGuerreiro()">
+            <img src="https://i.pinimg.com/736x/96/6c/3a/966c3a0ce41bc19f723427d631999848.jpg" class="logo">
+            <h1>GUERREIRO</h1>
+        </div>
+    </div>
+
+    <div id = "conteiner2">
+        <div class = "assassino" onclick="BaseAssassino()">
+            <img src="https://i.pinimg.com/736x/a4/d1/a0/a4d1a0d700c085d987264b329c12a4e2.jpg" class="logo">
+            <h1>ASSASSINO</h1>
+        </div>
+        <div class = "piromante" onclick="BasePiromante()">
+            <img src="https://i.pinimg.com/736x/33/81/02/338102e12a4a0023056a2c792c6f49b9.jpg" class="logo">
+            <h1>PIROMANTE</h1>
+        </div>
+    </div>
+    
+    <script>
+        function BaseMago()  {
+            alert("🔹 Mago mestre da magia arcana, o mago é um estudioso das artes místicas que utiliza feitiços para atacar, se defender e manipular o campo de batalha. Embora frágil fisicamente, compensa com um vasto arsenal de encantamentos, podendo lançar bolas de fogo, paralisar inimigos ou até invocar criaturas para ajudá-lo. Sua maior qualidade é a versatilidade mágica e o alto poder destrutivo à distância."
+);
+        }
+        function BaseGuerreiro()  {
+            alert("⚔ Guerreiro especialista em combate corpo a corpo, o guerreiro é um lutador robusto que confia na força bruta e na resistência para vencer batalhas. Armado com espadas, machados ou lanças, ele se destaca por sua durabilidade e capacidade de proteger aliados no campo de batalha. Sua principal qualidade é a resistência, podendo suportar grandes quantidades de dano e continuar lutando."
+);
+        }
+        function BaseAssassino()  {
+            alert("🗡 Assassino ágil e letal, o assassino é um mestre da furtividade e do ataque surpresa. Treinado para eliminar inimigos rapidamente, ele utiliza adagas, venenos e golpes críticos para causar dano massivo antes que o alvo tenha chance de reagir. Sua maior qualidade é a velocidade e a capacidade de acabar com oponentes em segundos sem ser notado."
+);
+        }
+        function BasePiromante()  {
+            alert(" 🔥 Piromante adepto da magia do fogo, o piromântico canaliza chamas para queimar seus inimigos e devastar o ambiente ao redor. Diferente do mago tradicional, ele combina magia e combate físico, muitas vezes imbuindo suas armas com fogo ou conjurando explosões destrutivas. Sua principal qualidade é o alto dano contínuo causado pelas chamas, tornando-o um perigo constante para qualquer adversário."
+);
+        }
+
+    </script>
+</body>
